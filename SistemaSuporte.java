@@ -4,7 +4,7 @@ public class SistemaSuporte {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String[][] chamados = new String[100][5]; // ID, Nome, Descrição, Prioridade, Status
+        String[][] chamados = new String[100][5];
         int contadorChamados = 0;
 
         int opcao;
@@ -15,7 +15,7 @@ public class SistemaSuporte {
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = sc.nextInt();
-            sc.nextLine(); // limpar buffer
+            sc.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -27,7 +27,7 @@ public class SistemaSuporte {
                     System.out.print("Prioridade (Baixa / Media / Alta): ");
                     String prioridade = sc.nextLine();
 
-                    chamados[contadorChamados][0] = String.valueOf(contadorChamados + 1); // ID
+                    chamados[contadorChamados][0] = String.valueOf(contadorChamados + 1);
                     chamados[contadorChamados][1] = nome;
                     chamados[contadorChamados][2] = descricao;
                     chamados[contadorChamados][3] = prioridade;
@@ -73,7 +73,7 @@ public class SistemaSuporte {
                                     System.out.println("0 - Voltar");
                                     System.out.print("Escolha uma opção: ");
                                     subOpcao = sc.nextInt();
-                                    sc.nextLine(); // limpar buffer
+                                    sc.nextLine();
 
                                     switch (subOpcao) {
                                         case 1:
